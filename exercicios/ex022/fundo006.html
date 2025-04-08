@@ -13,15 +13,28 @@
             background-repeat: no-repeat;
             /*  
             contain = imagem 100% exibida (cria barras pretas dependendo do tamanho da tela)
+
             cover = cobre a tela inteira mesmo que tenha que picotar a imagem ( fazendo caber )
-              
             */
             background-size: cover; 
+
+            background-attachment: fixed; /*
+            fixed = Mantém o background fixado, enquanto o conteudo rola normalmente ( perfeito em combinação com o background-size: cover)
+            
+            scroll = escrola a imagem junto com o conteúdo apresentado na página
+            */
+
+            /* 
+            Shorthand - Background
+            color > image > position > repeat > [size] > attachment
+            */
+
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat cover fixed;
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -33,7 +46,7 @@
 <body>
     <main>
         <h1>Teste de Imagem de fundo</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sunt excepturi reiciendis, explicabo minus officia nam tempore voluptates sapiente, at aliquam incidunt consectetur qui corrupti obcaecati hic culpa libero veniam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde et facere sunt consequuntur numquam ex quae necessitatibus reiciendis suscipit vero tempore consectetur culpa, cupiditate porro provident ullam! Aut, iste molestias! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga laborum corrupti officia aperiam, temporibus sint minus assumenda officiis rem distinctio? Tenetur doloremque inventore repellat aliquam, odit nisi unde ullam ex.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sunt excepturi reiciendis, explicabo minus officia nam tempore voluptates sapiente, at aliquam incidunt consectetur qui corrupti obcaecati hic culpa libero veniam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde et facere sunt consequuntur numquam ex quae necessitatibus reiciendis suscipit vero tempore consectetur culpa, cupiditate porro provident ullam! Aut, iste molestias! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga laborum corrupti officia aperiam, temporibus sint minus assumenda officiis rem distinctio? Tenetur doloremque inventore repellat aliquam, odit nisi unde ullam ex.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sunt excepturi reiciendis, explicabo minus officia nam tempore voluptates sapiente, at aliquam incidunt consectetur qui corrupti obcaecati hic culpa libero veniam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde et facere sunt consequuntur numquam ex quae necessitatibus reiciendis suscipit vero tempore consectetur culpa, cupiditate porro provident ullam! Aut, iste molestias! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga laborum corrupti officia aperiam, temporibus sint minus assumenda officiis rem distinctio? Tenetur doloremque inventore repellat aliquam, odit nisi unde ullam ex.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sunt excepturi reiciendis, explicabo minus officia nam tempore voluptates sapiente, at aliquam incidunt consectetur qui corrupti obcaecati hic culpa libero veniam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde et facere sunt consequuntur numquam ex quae necessitatibus reiciendis suscipit vero tempore consectetur culpa, cupiditate porro provident ullam! Aut, iste molestias! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga laborum corrupti officia aperiam, temporibus sint minus assumenda officiis rem distinctio? Tenetur doloremque inventore repellat aliquam, odit nisi unde ullam ex.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sunt excepturi reiciendis, explicabo minus officia nam tempore voluptates sapiente, at aliquam incidunt consectetur qui corrupti obcaecati hic culpa libero veniam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde et facere sunt consequuntur numquam ex quae necessitatibus reiciendis suscipit vero tempore consectetur culpa, cupiditate porro provident ullam! Aut, iste molestias! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga laborum corrupti officia aperiam, temporibus sint minus assumenda officiis rem distinctio? Tenetur doloremque inventore repellat aliquam, odit nisi unde ullam ex.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sunt excepturi reiciendis, explicabo minus officia nam tempore voluptates sapiente, at aliquam incidunt consectetur qui corrupti obcaecati hic culpa libero veniam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde et facere sunt consequuntur numquam ex quae necessitatibus reiciendis suscipit vero tempore consectetur culpa, cupiditate porro provident ullam! Aut, iste molestias! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga laborum corrupti officia aperiam, temporibus sint minus assumenda officiis rem distinctio? Tenetur doloremque inventore repellat aliquam, odit nisi unde ullam ex.</p>
     </main>
     
 </body>
