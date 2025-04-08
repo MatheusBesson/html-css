@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: lightgrey;
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+            /*Ordem shorthand
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            border-bottom-left-radius: 15px;
+            */
+            box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.26)
+
+        }
+
+        article {
+            background-color: rgb(230, 173, 173);
+            padding-left: 10px;
+            padding-top: 10px;
+        }
+
+        article>aside {
+            background-color: rgb(224, 105, 105);
+            padding: 1px;
+            margin-left: -10px;
+
+        }
+        aside > p {
+            margin: 5px
+        }
+
+
+        footer {
+            background-color: black;
+            color: rgb(201, 201, 201);
+            text-align: center;
+            padding: 4px;
+        }
+
+        footer>p {
+            margin: 0px;
+        }
+
+        nav {
+            background-color: rgb(167, 167, 167);
+            padding: 3px;
+            box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.527);
+
+
+        }
+
+        nav>a {
+            text-decoration: none;
+            color: white;
+            margin-right: 20px;
+        }
+
+        nav>a:hover {
+            text-decoration: underline;
+        }
+
+        div#bola {
+            display: inline-block;
+            height: 100px;
+            width: 100px;
+            background-color: rgb(255, 136, 0);
+            border-radius: 50%;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<!--Grouping Tags semnânticas-->
+
+<body>
+    <header> <!--cabeçalho-->
+        <h1>Meu site</h1>
+        <nav> <!--navegação-->
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main> <!-- conteúdo principal-->
+        <section id="assuntos"> <!-- sessões-->
+            <h2>Esportes, Política e tecnologia</h2>
+        </section>
+        <section id="noticias"> <!-- sessões-->
+            <article> <!-- artigos-->
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam eius minus facere sint voluptatibus
+                    voluptatum nisi commodi, laboriosam, id, similique sit. Quasi earum quae rem sunt, sint id deleniti
+                    impedit!</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer> <!--Rodapé-->
+        <p>Desenvolvido por Matheus Besson</p>
+    </footer>
+    <div id="bola"> 
+
+    </div>
+    <div id="bola"> 
+
+    </div>
+    <div id="bola"> 
+
+    </div>
+    <div id="bola"> 
+
+    </div>
+</body>
+
+</html>

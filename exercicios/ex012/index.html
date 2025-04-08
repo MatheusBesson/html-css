@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor</p>
+    <!-- Videos hospedados dessa maneira consomem muito tráfego de dados, o que acaba saindo caro-->
+    <video width="560" height="315" controls loop> <!--posters para thumbnail, pode selecionar uma imagem----- O pagamento de site é feito por entrada de cliente-->
+        <source src="midia/Meu Video-mp4.mp4" type="video/mp4">
+        <source src="midia/Meu Video-webm.webm" type="video/webm">
+        <p>Se o navegador não tem compatibilidade com reprodução de videos.</p>
+    </video>
+
+    <!--Mais barato e amplia ainda mais a abrangencia de visualização dentro do google-->
+    <!-- excistem outros sites para hospedar seus videos também, como vimeo(melhor qualidade), entre outros-->
+    <h1>inserindo videos do Youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/LW0bhKitRBk?si=d5lPdLfV7ppNjzxt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+@import url(); /* Para importar uma font externa, como a work sans ( para poder usar o peso da font - lighter - normal - bold - bolder) */
+
+        body {
+            font-family: Arial, Helvetica,  monospace;
+            /* 
+            Medidas Absolutas
+            cm, mm, in(polegada), px, pt, pc //Podem acorrer apresentações diferentes dependendo do tamanho da tela do usuário
+
+            Medidas Relativas
+            em(altura do M), ex, rem, vw (% de uma viewport), % 
+            16px geralmente = 1em
+
+            Recomendação do w3c é utilizar px e em
+            */
+
+            font-size: 1em; /*Tamanho default da font em pagina na maioria dos navegadores é em px*/ 
+
+            /* Buscar sempre utilizar em para nao ter tanta distorção em relação a pixelagem de uma tela ou o tipo de tela do usuário */
+
+            font-weight: lighter; /* pode-se utilizar também por numeração como: 100 - 200 - 300 - 400... se existirem esses pesos na fonte escolhida*/ 
+
+            font-style: normal; /*Para escolher o estilo de escrita, como: Italic, normal (default), obliquo... Se existirem determinadas caracteristicas para a fonte escolhida. Verificar até bold+italic (Algumas fontes não possuem)  */
+
+            text-decoration: underline; /*Sublinhado abaixo da letra com underline */
+
+        }
+
+        h1 {
+           /* font-family: 'Times New Roman', Times, serif;
+           font-weight: bold;
+            font-size: 3em;
+            font-style: italic; */
+
+            /*Shorthand font (ordem de código das fontes)
+            - font-style -> font-weight -> font-size -> font-family 
+            */
+            font: italic bold 3em Arial, sans-serif;
+        }
+
+        h2 {
+            font: bold 2em 'Times New Roman';
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nulla porro corrupti accusamus! Nam praesentium explicabo asperiores harum expedita vero mollitia? Nesciunt error autem corporis libero. Sequi possimus repellendus ratione. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem necessitatibus nesciunt praesentium perspiciatis doloribus optio aut similique dolore ex? Aperiam ea laborum sed veritatis, voluptas esse dolorem repellendus modi ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, non. Eum, ratione itaque esse commodi voluptate cum pariatur modi rem nostrum ipsa nobis inventore reprehenderit dolorum dolore. Tenetur, aut aspernatur?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis adipisci maxime illo harum? Aspernatur quisquam inventore consectetur error ut tenetur hic dolorem, nemo harum enim libero cupiditate! Officia, minima distinctio?</p>
+
+    <h2>Subtítulo do exercicio</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo quis nesciunt neque atque quod corrupti quaerat at? Numquam eum placeat nisi iste exercitationem iure, officiis saepe reprehenderit itaque odio quibusdam?</p>
+</body>
+</html>

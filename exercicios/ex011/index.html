@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminiua o tamanho do seu navegador.</p>
+
+    <picture><!--Cuidar sempre com os sentidos de ordem!!!!-->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png"><!--Se o navegador tiver menos tamanho que 750px (contagem com barra de rolagem) vai aparecer foto-p.png -->
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png"> <!--Se o navegador tiver menos tamanho que 1050px (contagem com barra de rolagem) vai aparecer foto-m.png -->
+        <img src="imagens/foto-g.png" alt="foto flexível"> <!-- se nenhum dos requisitos a cima estiver sendo cumprido, aparecerá a foto-g.png-->
+        <!--Adapatação do tamanho de imagem com o tamanho de tela do usuário-->
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <!--<audio src="midia/Getz Me to Brazil.mp3" controls autoplay></audio> --> <!--Acima, uma maneira um pouco limitada-->
+
+    <audio preload="metadata" autoplay controls loop> <!-- autoplay para inicar automaticamente e controls para aparecerem os controles do audio na página-->
+        <source src="midia/Getz Me to Brazil.mp3" type="audio/mpeg">
+        <source src="midia/Getz Me to Brazil.ogg" type="audio/ogg"><!-- é necessario saber como identificar o tipo de arquivo, isso através de listas, dependendo do tipo.-->
+        <source src="midia/Getz Me to Brazil.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/Getz Me to Brazil.mp3">Clique aqui para baixar o arquivo MP3</a>.</p> <!-- essa linha nao funcionou-->
+       </audio>
+</body>
+</html>
