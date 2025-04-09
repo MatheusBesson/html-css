@@ -30,10 +30,13 @@ header > h1 {
     padding-top: 50px;
     /* text-transform: uppercase; /*coloca as letras em maiúsculo*/
     font-variant: small-caps; /*deixa em maiúsculo mas com distinção da primeira letra (elegante)*/
+    font-size: 2.6vw;
 }
 
 header > p {
     padding-bottom: 50px;
+    font-size: 1.5vw;
+
 }
 
 header a, footer a {
@@ -46,6 +49,11 @@ header a:hover, footer a:hover {
     text-decoration: underline;
 }
 
+.greyline {
+    background-color: darkgrey;
+    height: 20px;
+}
+
 section {
     padding-top: 10vh; /*aumenta e diminui conforme o tamanho de display*/
     padding-bottom: 10vh;
@@ -54,6 +62,8 @@ section {
     padding-left: 30px;
 
     font-family: var(--font2);
+    font-size: 1.5em;
+    padding-left: 10vw;
 
 }
 
@@ -72,6 +82,7 @@ section.imagem > p {
     width: 400px;
     border-radius: 8px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.295);
+    padding: 10px;
 }
 
 footer {
