@@ -16,8 +16,21 @@
             text-align: center; 
         }
 
+        caption {
+            font-size: 1.4em;
+            font-weight: bold;
+            border: 1px solid black;
+            padding: 10px;
+            background-color: lightcoral;
+        }
+
         thead, tfoot {
-            background-color: rgb(177, 177, 177);
+            background-color: lightslategray;
+            color: white;
+        }
+        /*efeito zebrado*/ /*pode usar (odd) {2n-1} também ou (even){2n} para ímpar e par*/
+        tbody > tr:nth-child(2n) {
+            background-color: rgb(221, 221, 221);
         }
 
 
@@ -38,6 +51,7 @@
     <!-- Anatomia para Tabelas GRANDES
 
         TABLE
+            CAPTION
             THEAD
                 TR, TD ,TH
             TBODY
@@ -46,10 +60,11 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>População das Unidades Federativas do Brasil</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 140px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -65,12 +80,40 @@
                 <td>Rio de Janeiro</td>
                 <td class="num">17 264 943</td>
             </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 850 513</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 824 665</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 229 915</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 539 029</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9 233 656</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8 664 306</td>
+            </tr>
+            <tr>
+                <td> Santa Catarina</td>
+                <td class="num">8 058 441</td>
+            </tr>
 
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
-                <td class="num">84.352.783</td>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>145 928 643</strong></td>
             </tr>
         </tfoot>
         
