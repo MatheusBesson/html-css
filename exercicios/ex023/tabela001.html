@@ -11,21 +11,24 @@
 
         table {
             width: 400px;
+            height: 400px;
             border-collapse: collapse; /*Junta as borders*/
         }
 
-        tr.linha {
-            background: lightcyan;
-        }
+      
 
         td {
             border: 1px solid black;
             padding: 8px;
+            text-align: center; /* Alihamento Horizontal */
+            vertical-align: top; /* Funciona muito bem para tabelas (vertical) */
         }
 
-        td.dado {
-            background-color: lightcoral;
+        .numero {
+            text-align: right;
         }
+
+      
     </style>
 </head>
 <body>
@@ -46,12 +49,12 @@
         <tr class="linha">
             <td>A2</td>
             <td>B2</td>
-            <td>C2</td>
+            <td class="numero">C2</td>
         </tr>
         <tr>
             <td class="dado">A3</td>
             <td>B3</td>
-            <td>C3</td>
+            <td class="numero">C3</td>
         </tr>
         <tr class="linha">
             <td>A4</td>
