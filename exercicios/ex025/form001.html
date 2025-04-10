@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Formulário 1</h1>
+    <form action="cadastro.php" autocomplete="off"> <!-- desliga o autocomplete para preenchimento dos dados -->
+        <p><label for="inome">Nome: </label> <!-- colocar o id do input para referencia do label -->
+            <input type="text" name="nome" id="inome">
+        </p> <!-- name: html,php -- id: javascript -->
+        <p><label for="isobrenome">Sobrenome: </label>
+            <input type="text" name="sobrenome" id="isobrenome">
+        </p>
+        <p><input type="submit" value="Enviar"></p>
+    </form> 
+    
+    <!-- DOIS METODOS PARA ENVIO DE FORMULARIOS
+    
+        GET (PADRÃO) Aparece os dados na url (joga os dados na cara do usuario) 
+
+        quando usar:
+        - Usar quando os dados não forem sensíveis
+        - Quando quiser que a url seja compartilhada (exemplo: google)
+
+        não usar:
+        - dados sensíveis: senhas, numero de cartão etc.
+        - envio de fotos ou arquivos.
+
+        caracteristicas:
+        - envio máximo de 3000 (3000 letras aprox.) bytes de dados com o metodo get
+
+
+
+
+        POST aparece os dados no cabeçados das requisições dos dados, usando inspecionar (HTTP) sem secure -- Utilizar para dados sensíveis, porem lembrar que os dados não estão protegidos
+
+        quando usar:
+        - dados sensíveis
+        - mais que 3000 bytes de dados enviados
+        - envio de fotos e arquivos por forms
+ 
+    -->
+
+
+</body>
+
+</html>
