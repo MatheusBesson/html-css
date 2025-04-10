@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela {
+            width: 100vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fça uma escolha</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia doloribus perferendis odio ea saepe doloremque fugit nemo laboriosam nesciunt eaque reprehenderit adipisci dolor quae neque maiores quis, quod velit cum. lorem</p>
+
+    <ul>
+        <li><a href="paginas_extras/pag001.html" target="frame">Primeira página</a></li> <!-- target = "frame" porque o name do iframe é frame -->
+        <li><a href="paginas_extras/pag002.html" target="frame">Segunda página</a></li>
+        <li><a href="paginas_extras/pag003.html" target="frame">Terceira página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet magnam at repellendus tenetur molestiae distinctio quae quaerat quibusdam nostrum officiis consequatur rerum dolor et, sapiente, vero laboriosam nemo totam sed? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro tenetur minima tempore eaque aspernatur alias, rerum eveniet eius? Id suscipit libero similique numquam reiciendis laudantium eaque dolores quibusdam nam dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique enim ducimus minima explicabo aliquid aut non? Nam temporibus nesciunt exercitationem accusamus magnam voluptatibus! Perferendis voluptatem, assumenda sint nihil commodi vitae?</p>
+    <!-- pode colocar o caminho do arquivo em src do iframe, para a pagina ja começar a aparecer no load inicial -->
+
+    <!-- pode usar também SRCDOC e escrever o conteudo que estará dentro do iframe quando ainda nao estiver load de paginas. EXEMPLO:  srcdoc = '<h1>O Conteudo de uma pagina carregará aqui se você apertar os botões a cima</h1>' !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    <iframe id="tela" name="frame" src="paginas_extras/pag002.html" frameborder="1" id="tela"> <!-- colocando name para caracterização e funcionamento da ancor -->
+
+        <p>Infelizmente seu navegador não é compatível</p>
+    </iframe>
+    
+</body>
+</html>
