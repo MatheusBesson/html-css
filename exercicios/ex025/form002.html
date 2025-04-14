@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Test de Formulário</h1>
+    <!-- Method POST para mais privacidade -->
+     <!-- Auto complete no forms ON ou OFF (desligado) para sugestão de preeenchimento dos inputs-->
+    <form action="cadastro.php" method="post" autocomplete="on">
+    <div>
+        <!-- for para conectar com o input ID -->
+        <label for="iusu">Usuário</label>
+        <!-- REQUIRED para NOT NULL, minlength 5 caracteres, maxlength 20 caracteres -->
+         <!-- SIZE para quantidade de caracteres visualizaveis no input -->
+          <!-- PLACEHOLDER para texto fantasma auxiliar -->
+           <!-- AUTOCOMPLETE no input para direcionar o navegador de que tipo de dados esta entrando, nome, senha, url, data, etc -->
+        <input type="text" name="usu" id="iusu" required minlength="5" maxlength="20" size="11" placeholder="Nome do Usuário" autocomplete="username">
+    </div>
+    <div>
+        <label for="isen">Senha: </label>
+        <input type="password" name="sen" id="isen" required minlength="8" maxlength="20" autocomplete="current-password">
+    </div>
+    <div>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </div>
+</form>
+    
+</body>
+</html>
