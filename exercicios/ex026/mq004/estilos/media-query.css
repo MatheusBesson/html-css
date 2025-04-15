@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+/*-----------TODAS AS DEMAIS MIDIAS----------------*/
+
+/*TYPICAL DEVICE BREAKPOINTS-----------------------|
+                                                   |
+Pequenas Telas: até 600px                          |
+Celular: 600px até 768px                           |
+tablet:  769px até 992px                           |
+desktop: 992px até 1200px                          |
+Grandes Telas: acima de 1200px                     |
+
+
+
+
+*/
+/*Como o site ja foi feito com base em MOBILE FIRST, nao temos as CSS para telas mobile aqui, pois as configurações ja CSS para eles já estão no arquivo style.css (main). Então as linhas abaixo estarão comentadas por ja terem sido configuradas em outro arquivo...*/
+
+/*
+
+@media screen and (max-width: 600px) and (max-width: 768px) {
+
+}
+*/
+/*impressão*/
+@media print {
+    body {
+        background-image: url(../imagens/back-print.jpg ); /*Desnecessario*/
+        font-family: 'Courier New', Courier, monospace;
+;
+    }
+
+    main {
+        border: 2px solid black;
+    }
+
+    main::after {
+        content: 'Essa impressão fpo feita atraves do site MatheusBesson.github.io';
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black
+
+    }
+
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: block;}
+    img#pc {display: none;}
+    img#tv {display: none;}
+    
+}
+/*tablet*/
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+        background-size: cover;
+
+    }
+
+    main {
+        width: 500px;
+    }
+
+    img#phone {display: none;}
+    img#tablet {display: block;}
+    img#print {display: none;}
+    img#pc {display: none;}
+    img#tv {display: none;}
+}
+/*desktop*/
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    body {
+        background: url(../imagens/back-pc.jpg);
+        background-position: center center;
+        background-size: cover;
+    }
+
+    main {
+        width: 600px;
+    }
+
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: none;}
+    img#pc {display: block;}
+    img#tv {display: none;}
+
+}
+/*telas grandes*/
+@media screen and (min-width: 1201px) {
+    body {
+        background: url(../imagens/back-tv.jpg);
+        background-size: cover;
+    }
+
+    main {
+        width: 700px;
+    }
+
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: none;}
+    img#pc {display: none;}
+    img#tv {display: block;}
+
+}
