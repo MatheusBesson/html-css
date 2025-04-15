@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="in1">Número 1: </label>
+            <input type="number" name="n1" id="in1" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+            <!-- ONINPUT em conjunto com código JavaScript vai rodar o script dentro da tag -->
+        </p>
+
+        <p>
+            <label for="in2">Número 2: </label>
+            <input type="number" name="n2" id="in2" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+            <!-- Existe a necessidade de REPLICAR o SCRIPT, caso ele uso o valor de outra tag também -->
+        </p>
+
+        <p>
+            <label for="isoma">Soma: </label>
+            <output name="soma" id="isoma"></output>
+            <!-- Uso da tag OUTPUT para colocar o valor para o usuário na tela -->
+
+            <!-- OBSERVAÇÃO: ATRAVÉS DESSE ESTILO DE SCRIPT, NÃO TEM NECESSIDADE DE PEGAR AS TAG EM JAVASCRIPT (window.document.getElementById()) como mostrado no exemplo de ISOMA -->
+
+        </p>
+
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+</body>
+
+</html>
