@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="iest">Estado</label>
+            <!-- SELECT Cria seleção de opções -->
+            <select name="estado" id="iest">
+
+                <!-- Muitas vezes esse opção é usada como pré-selecionada, quase como um placeholder
+                 OBS: Manter o VALOR DESMARCADO -->
+                <option value="" selected>--- Escolha ---</option>
+
+                <!-- Podemos criar subcategorias dentro das options utilizando OPTGROUP e dando um label para ser um texto escrito na subdivisão -->
+                <optgroup label="Região Sudeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="MA">Maranhão</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p> 
+            <!-- Podemos criar um input de txt com a função LIST="ID" e adiconar um datalist com options abaixo. Pode colocar Value. -->
+            <label for="iprof">Profissão: </label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option value="ADM">Administrador</option>
+                <option value="CONT">Contador</option>
+                <!--Dentro da dccumentação w3c pode-se criar OPTGROUP em datalist também, porem a tag não funciona atualmente  -->
+                <optgroup label="Tecnologia">
+                    <option value="DEV">Desenvolvedor</option>
+                </optgroup>
+                <option value="PROF">Professor</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem: </label> <br>
+            <!-- A tag TEXTAREA (Area de Texto) pode ser especificada com colunas(cols) e linhas(rows) -->
+             <!-- SEMPRE QUE UTILIZAR TEXT AREA EM UM FORMULÁRIO É NECESSARIO SER UTILIZADO O METODO POST, devido a quantidade de dados na url e a limitação do metodo GET -->
+            <textarea name="msg" id="imsg" cols="30" rows="10">
+
+
+            </textarea>
+
+        </p>
+
+
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+
+        </p>
+
+    </form>
+
+</body>
+
+</html>
