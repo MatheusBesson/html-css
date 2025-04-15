@@ -9,21 +9,45 @@
 
 <body>
     <h1>Teste de Formulário</h1>
-    <form action="" method="get" autocomplete="on">
-    <p>
-        <label for="inome">Nome</label>
-        <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome Completo" autocomplete="name">
-    </p>
-    <p>
-        <label for="imedia">Média</label>
-        <input type="number" name="media" id="imedia" required min="0" max="10" placeholder="0 a 10" step="0.1">
-    </p>
-    <p>
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Limpar">
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="inome">Nome</label>
+            <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome Completo"
+                autocomplete="name">
+        </p>
 
-    </p>
-</form>
+
+        <p>
+            <label for="imedia">Média</label>
+            <input type="number" name="media" id="imedia" required min="0" max="10" placeholder="0 a 10" step="0.1">
+            <!-- STEP para determinar de quanto em quanto o valor de input number é aceito -->
+        </p>
+
+        <p>
+            <label for="imes">Mês: </label>
+            <input type="month" name="mes" id="imes">
+        </p>
+
+        <p>
+            <label for="idate">Dia da Prova:</label>
+            <input type="date" name="date" id="idate">
+
+        </p>
+
+        <p>
+            <label for="itime"> Hora da Prova: </label>
+            <input type="time" name="time" id="itime">
+        </p>
+
+
+        <p>
+            <!-- Submit dentro do forms, envia -->
+            <input type="submit" value="Enviar">
+            <!-- reset dentro do form, limpa todos os campos -->
+            <input type="reset" value="Limpar">
+
+        </p>
+    </form>
 
 </body>
 
