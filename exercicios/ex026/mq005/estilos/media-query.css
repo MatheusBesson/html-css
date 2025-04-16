@@ -15,7 +15,7 @@ Grandes Telas: acima de 1200px                     |
     }
 
     menu#items {
-        display: block;
+        display: block !important;
 
     }
 

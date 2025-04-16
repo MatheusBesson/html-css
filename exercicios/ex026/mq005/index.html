@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="estilos/style.css"> <!-- estilo do mobile first -->
     <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body onresize="mudouTamaho()">
+<body>
     <header>
         <h1>Meu site</h1>
         <nav id="burger" class="material-symbols-outlined" onclick="clickMenu()">menu</nav>
@@ -41,14 +41,6 @@
                 items.style.display = 'none'
             } else {
                 items.style.display = 'block'
-            }
-        }
-
-        function mudouTamanho() {
-            if (window.innerWidth >= 769) {
-                items.style.display = 'block'
-            } else {
-                items.style.display = 'none'
             }
         }
     </script>
